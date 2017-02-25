@@ -1,0 +1,6 @@
+framework module Pods_CollectionWithDownloadProgress {
+  umbrella header "Pods-CollectionWithDownloadProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}
