@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PXG-Td-Nye">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="114" width="320" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="6rx-hz-saf">
                                     <size key="itemSize" width="95" height="124"/>
@@ -102,7 +102,6 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqE-xT-YI6">
                                                     <rect key="frame" x="8" y="8" width="79" height="108"/>
-                                                    <state key="normal" title="Button"/>
                                                     <connections>
                                                         <action selector="selectBook:" destination="IYc-h6-mgH" eventType="touchUpInside" id="lKl-Ez-cyY"/>
                                                     </connections>
@@ -130,10 +129,20 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ZoU-B1-Wan"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-WI-FiM">
+                                <rect key="frame" x="16" y="64" width="288" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PXG-Td-Nye" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="30k-ru-pJD"/>
+                            <constraint firstItem="PXG-Td-Nye" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="30k-ru-pJD"/>
+                            <constraint firstItem="SHh-WI-FiM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4hC-YB-r5K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SHh-WI-FiM" secondAttribute="trailing" id="F0C-Eh-1EP"/>
+                            <constraint firstItem="SHh-WI-FiM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GZz-jV-eHK"/>
+                            <constraint firstItem="PXG-Td-Nye" firstAttribute="top" secondItem="SHh-WI-FiM" secondAttribute="bottom" id="MkM-Z5-kFr"/>
                             <constraint firstItem="PXG-Td-Nye" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P30-j8-d1W"/>
                             <constraint firstAttribute="trailing" secondItem="PXG-Td-Nye" secondAttribute="trailing" id="WZO-9J-ILU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PXG-Td-Nye" secondAttribute="bottom" id="jNi-Pl-OBz"/>
@@ -145,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105" y="46"/>
+            <point key="canvasLocation" x="-105" y="45.422535211267608"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="hTC-KW-TSF">
